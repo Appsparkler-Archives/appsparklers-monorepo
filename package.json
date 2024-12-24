@@ -2,6 +2,7 @@
   "name": "appsparklers",
   "private": true,
   "scripts": {
+    "sherif": "npx sherif@latest",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -10,7 +11,7 @@
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
-    "typescript": "5.5.4"
+    "typescript": "^5.7.2"
   },
   "engines": {
     "node": ">=18"
