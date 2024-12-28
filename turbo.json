@@ -5,6 +5,14 @@
     "storybook": {
       "persistent": true,
       "cache": false
+    },
+    "build": {
+      "inputs": [
+        "lib/**/*.{ts,tsx}",
+        "tsconfig.build.json",
+        "tsconfig.app.json"
+      ],
+      "outputs": ["dist"]
     }
   }
 }
