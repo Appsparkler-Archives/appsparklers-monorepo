@@ -18,7 +18,7 @@
         "vite.config.ts"
       ],
       "outputs": ["dist"],
-      "dependsOn": ["lint"]
+      "dependsOn": ["^lint"]
     },
     "lint": {
       "inputs": ["lib/**/*.{ts,tsx}"]

@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig, PluginOption } from "vite";
 import react from "@vitejs/plugin-react";
 import { extname, relative, resolve } from "path";
 import dts from "vite-plugin-dts";
@@ -13,7 +13,7 @@ export default defineConfig({
       include: ["lib"],
       tsconfigPath: "./tsconfig.build.json",
     }),
-  ],
+  ] as PluginOption[],
   build: {
     copyPublicDir: false,
     lib: {

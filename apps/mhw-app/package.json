@@ -7,7 +7,7 @@
     "_build": "remix vite:build",
     "_dev": "remix vite:dev",
     "netlify:dev": "netlify dev",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "lint": "eslint --ignore-pattern .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
     "typecheck": "tsc"
   },
@@ -22,6 +22,9 @@
     "isbot": "^4.1.0"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
     "@remix-run/dev": "^2.15.2",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
@@ -33,8 +36,9 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.14.0",
     "typescript": "^5.1.6",
-    "vite": "^6.0.5",
+    "vite": "^5.4.11",
     "vite-tsconfig-paths": "^4.2.1"
   },
   "engines": {
