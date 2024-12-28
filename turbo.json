@@ -4,9 +4,22 @@
   "tasks": {
     "netlify:dev": {
       "persistent": true,
-      "cache": false
+      "cache": false,
+      "dependsOn": ["build", "css"]
     },
     "storybook": {
+      "persistent": true,
+      "cache": false
+    },
+    "css:watch": {
+      "persistent": true,
+      "cache": false
+    },
+    "css": {
+      "inputs": [".storybook/input.css", "app/input.css"],
+      "outputs": [".storybook/output.css"]
+    },
+    "build:watch": {
       "persistent": true,
       "cache": false
     },

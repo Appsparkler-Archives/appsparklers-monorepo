@@ -1,5 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-import "./output.css";
+// import "./output.css?url";
 import { join, dirname } from "path";
 
 /**

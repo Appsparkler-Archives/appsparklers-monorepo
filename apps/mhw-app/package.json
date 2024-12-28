@@ -6,6 +6,7 @@
   "scripts": {
     "_build": "remix vite:build",
     "_dev": "remix vite:dev",
+    "css": "tailwindcss -i ./app/input.css -o ./app/output.css",
     "netlify:dev": "netlify dev",
     "lint": "eslint --ignore-pattern .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",

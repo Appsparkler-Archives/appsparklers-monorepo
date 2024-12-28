@@ -554,11 +554,23 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.contents {
+  display: contents;
+}
+
 .border {
   border-width: 1px;
 }
 
-.bg-green-300 {
+.bg-purple-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity, 1));
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity, 1));
 }
