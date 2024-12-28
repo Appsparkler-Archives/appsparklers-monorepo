@@ -37,4 +37,9 @@ yarn-error.log*
 .DS_Store
 *.pem
 
-example-*
+# Storybook
+*storybook.log
+
+# newly added by appsparklers
+.yarn*
+stories
