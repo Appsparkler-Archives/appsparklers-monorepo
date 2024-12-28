@@ -43,3 +43,5 @@ yarn-error.log*
 # newly added by appsparklers
 .yarn*
 stories
+# Local Netlify folder
+.netlify
