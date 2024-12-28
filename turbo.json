@@ -10,9 +10,14 @@
       "inputs": [
         "lib/**/*.{ts,tsx}",
         "tsconfig.build.json",
-        "tsconfig.app.json"
+        "tsconfig.app.json",
+        "vite.config.ts"
       ],
-      "outputs": ["dist"]
+      "outputs": ["dist"],
+      "dependsOn": ["lint"]
+    },
+    "lint": {
+      "inputs": ["lib/**/*.{ts,tsx}"]
     }
   }
 }
