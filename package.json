@@ -4,7 +4,7 @@
   "scripts": {
     "_mhw:pages:storybook": "turbo storybook --filter=@repo/pages-mhw",
     "_mhw:pages:css:watch": "turbo css:watch --filter=@repo/pages-mhw",
-    "mhw:storybook": "concurrently 'npm run _mhw:pages:css:watch' 'npm run _mhw:pages:storybook' --prefix-colors='bgYellow,bgBlue'"
+    "mhw:sb": "concurrently 'npm run _mhw:pages:css:watch' 'npm run _mhw:pages:storybook' --prefix-colors='bgYellow,bgBlue'"
   },
   "engines": {
     "node": ">=18"
