@@ -1,5 +1,5 @@
 export const Button = (
   props: React.ButtonHTMLAttributes<HTMLButtonElement>
 ) => {
-  return <button {...props} />;
+  return <button {...props} className="bg-green-400" />;
 };

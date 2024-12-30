@@ -1,7 +1,11 @@
 {
   "name": "appsparklers",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "_mhw:storybook": "turbo storybook --filter=@repo/pages-mhw",
+    "_mhw:css:watch": "turbo css:watch --filter=@repo/pages-mhw",
+    "mhw:storybook": "run-p _mhw:css:watch _mhw:storybook"
+  },
   "engines": {
     "node": ">=18"
   },
@@ -11,6 +15,7 @@
     "apps/*"
   ],
   "devDependencies": {
+    "npm-run-all2": "^7.0.2",
     "turbo": "^2.3.3"
   }
 }

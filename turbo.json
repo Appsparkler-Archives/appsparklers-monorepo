@@ -19,10 +19,6 @@
       "inputs": [".storybook/input.css", "app/input.css"],
       "outputs": [".storybook/output.css"]
     },
-    "build:watch": {
-      "persistent": true,
-      "cache": false
-    },
     "build": {
       "inputs": [
         "lib/**/*.{ts,tsx}",
