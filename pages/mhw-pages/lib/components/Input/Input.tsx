@@ -1,3 +1,3 @@
 export const Input = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
-  return <input {...props} style={{ border: "1px solid green" }} />;
+  return <input className="input input-bordered w-full max-w-xs" {...props} />;
 };
