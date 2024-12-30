@@ -36,10 +36,30 @@ export const Secondary: Story = {
   },
 };
 
-export const Large: Story = {
-  args: {},
+export const ExtraSmall: Story = {
+  args: {
+    className: "btn btn-secondary btn-xs",
+    children: "Hello World",
+  },
 };
 
 export const Small: Story = {
-  args: {},
+  args: {
+    className: "btn btn-secondary btn-sm",
+    children: "Hello World",
+  },
+};
+
+export const Normal: Story = {
+  args: {
+    className: "btn btn-secondary",
+    children: "Hello World",
+  },
+};
+
+export const Large: Story = {
+  args: {
+    className: "btn btn-secondary btn-lg",
+    children: "Hello World",
+  },
 };
