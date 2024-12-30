@@ -1,12 +1,12 @@
 {
-  "name": "apps-mhw-app",
+  "name": "@repo/apps-mhw",
   "private": true,
   "sideEffects": false,
   "type": "module",
   "scripts": {
     "_build": "remix vite:build",
     "_dev": "remix vite:dev",
-    "css": "tailwindcss -i ./app/input.css -o ./app/output.css",
+    "css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
     "netlify:dev": "netlify dev",
     "lint": "eslint --ignore-pattern .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
@@ -30,6 +30,7 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "daisyui": "^4.12.23",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
