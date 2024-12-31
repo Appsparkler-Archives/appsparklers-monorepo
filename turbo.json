@@ -18,7 +18,7 @@
     "build": {
       "inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
       "outputs": ["dist"],
-      "dependsOn": ["^build", "css"]
+      "dependsOn": ["^build", "^css"]
     },
     "lint": {
       "inputs": ["**/*.{ts,tsx}"]
