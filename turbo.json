@@ -22,6 +22,10 @@
     },
     "lint": {
       "inputs": ["**/*.{ts,tsx}"]
+    },
+    "start": {
+      "persistent": true,
+      "cache": false
     }
   }
 }

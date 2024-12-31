@@ -1,4 +1,5 @@
 [build]
+base = "apps/mhw-app"
 command = "npm run build"
 publish = "build/client"
 
