@@ -2,35 +2,25 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
   "tasks": {
-    "netlify:dev": {
+    "dev": {
       "persistent": true,
       "cache": false,
-      "dependsOn": ["build", "css"]
-    },
-    "storybook": {
-      "persistent": true,
-      "cache": false
+      "dependsOn": ["^build", "^css"]
     },
     "css:watch": {
       "persistent": true,
       "cache": false
     },
     "css": {
-      "inputs": [".storybook/input.css", "app/input.css"],
-      "outputs": [".storybook/output.css"]
+      "inputs": ["**/*.{ts,tsx,js,jsx,css}"],
+      "outputs": ["**/*.css"]
     },
     "build": {
-      "inputs": [
-        "lib/**/*.{ts,tsx}",
-        "tsconfig.build.json",
-        "tsconfig.app.json",
-        "vite.config.ts"
-      ],
-      "outputs": ["dist"],
-      "dependsOn": ["^lint"]
+      "inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
+      "outputs": ["dist"]
     },
     "lint": {
-      "inputs": ["lib/**/*.{ts,tsx}"]
+      "inputs": ["**/*.{ts,tsx}"]
     }
   }
 }
