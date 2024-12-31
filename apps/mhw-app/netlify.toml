@@ -1,9 +1,9 @@
 [build]
 command = "npm run _build"
-publish = "apps/mhw-app/build/client"
+publish = "build/client"
 
 [dev]
-command = "npm run _dev"
+command = "npm run dev"
 framework = "vite"
 
 # Set immutable caching for static files, because they have fingerprinted filenames
