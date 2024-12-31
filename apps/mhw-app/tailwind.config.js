@@ -7,7 +7,7 @@ module.exports = {
     darkTheme: true,
     themes: [
       // "pastel",
-      // "light",
+      "light",
       // "dark",
       // "cupcake",
       // "bumblebee",
@@ -23,7 +23,7 @@ module.exports = {
       // "aqua",
       // "lofi",
       // "pastel",
-      "fantasy",
+      // "fantasy",
       // "wireframe",
       // "black",
       // "luxury",
