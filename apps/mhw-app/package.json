@@ -7,6 +7,7 @@
     "_dev": "remix vite:dev",
     "dev": "netlify dev",
     "build": "remix vite:build",
+    "css": "tailwindcss -i ./app/input.css -o ./app/output.css",
     "css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
