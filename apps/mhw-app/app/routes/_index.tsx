@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Welcome to Remix</h1>
-      <Button>Eat Me!</Button>
+      <Button>Eat Me!!!</Button>
       <button>Hello</button>
       <Input placeholder="Placeholder..." />
       <ul>
