@@ -8,7 +8,7 @@ console.log({
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [resolve("../../pages/mhw-pages/dist/**/*.{js,jsx,ts,tsx}")],
+  content: [resolve("../../pages/mhw-pages/lib/**/*.{js,jsx,ts,tsx}")],
   daisyui: {
     darkTheme: true,
     themes: [
