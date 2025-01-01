@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { formatDate } from "./utils/formatDate";
 
 export interface IMessageLinkProps {
   messageBroadcastDate?: string;
@@ -20,9 +21,8 @@ export const MessageLink = ({
   }, [disabled]);
   return (
     <a href={messageLink} className={className} download>
-      Read Whisper From The Brighter World broadcasted on{" "}
-      {messageBroadcastDate &&
-        new Date(messageBroadcastDate).toLocaleDateString()}
+      Read Whisper From The Brighter World broadcasted on:{" "}
+      {messageBroadcastDate && formatDate(new Date(messageBroadcastDate))}
     </a>
   );
 };
