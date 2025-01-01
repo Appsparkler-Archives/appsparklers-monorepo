@@ -1,11 +1,6 @@
 import daisyuiPlugin from "daisyui";
 import { resolve } from "path";
 
-console.log({
-  __dirname: __dirname,
-  resolved_path: resolve("../../pages/mhw-pages/dist/**/*.{js,jsx,ts,tsx}"),
-});
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [resolve("../../pages/mhw-pages/lib/**/*.{js,jsx,ts,tsx}")],
@@ -13,10 +8,10 @@ module.exports = {
     darkTheme: true,
     themes: [
       // "pastel",
-      "light",
+      // "light",
       // "dark",
       // "cupcake",
-      // "bumblebee",
+      "bumblebee",
       // "emerald",
       // "corporate",
       // "synthwave",

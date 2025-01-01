@@ -25,7 +25,7 @@ export default defineConfig({
       input: Object.fromEntries(
         glob
           .sync("lib/**/*.{ts,tsx}", {
-            ignore: ["lib/**/*.d.ts"],
+            ignore: ["lib/**/*.d.ts", "lib/**/*.stories.tsx"],
           })
           .map((file: string) => [
             // The name of the entry point

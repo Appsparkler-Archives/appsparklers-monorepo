@@ -1,2 +1,1 @@
-export { Button } from "./components/Button/Button";
-export { Input } from "./components/Input/Input";
+export { HomePage } from "./HomePage/HomePage";
