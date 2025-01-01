@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
-import { HomePage } from "@repo/pages-mhw";
+import { App } from "./App";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,5 +9,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <HomePage onChangeBroadcastDate={async () => {}} />;
+  return <App />;
 }
