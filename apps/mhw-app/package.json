@@ -11,7 +11,8 @@
     "css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "deploy": "netlify deploy --build"
   },
   "dependencies": {
     "@netlify/edge-functions": "^2.3.1",
