@@ -1,4 +1,5 @@
 import daisyUiPlugin from "daisyui";
+import prosePlugin from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,5 +10,5 @@ module.exports = {
   daisyui: {
     themes: ["bumblebee"],
   },
-  plugins: [daisyUiPlugin],
+  plugins: [daisyUiPlugin, prosePlugin],
 };

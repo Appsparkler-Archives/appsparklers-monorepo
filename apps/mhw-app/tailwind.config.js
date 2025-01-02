@@ -1,4 +1,5 @@
 import daisyuiPlugin from "daisyui";
+import prosePlugin from "@tailwindcss/typography";
 import { resolve } from "path";
 
 /** @type {import('tailwindcss').Config} */
@@ -42,5 +43,5 @@ module.exports = {
       // "sunset",
     ],
   },
-  plugins: [daisyuiPlugin],
+  plugins: [daisyuiPlugin, prosePlugin],
 };
