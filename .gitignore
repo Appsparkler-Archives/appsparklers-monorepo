@@ -45,3 +45,4 @@ yarn-error.log*
 stories
 # Local Netlify folder
 .netlify
+.temp
