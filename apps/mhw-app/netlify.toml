@@ -5,6 +5,7 @@ publish = "build/client"
 
 [dev]
 base = "apps/mhw-app"
+publish = "build/client"
 command = "npm run _dev"
 framework = "vite"
 
