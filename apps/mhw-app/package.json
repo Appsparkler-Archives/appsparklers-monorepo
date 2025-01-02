@@ -12,7 +12,9 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
     "typecheck": "tsc",
-    "deploy": "netlify deploy --build"
+    "netlify:build": "netlify build",
+    "netlify:deploy": "netlify deploy --open",
+    "netlify:deploy:prod": "netlify deploy --prod --open"
   },
   "dependencies": {
     "@netlify/edge-functions": "^2.3.1",

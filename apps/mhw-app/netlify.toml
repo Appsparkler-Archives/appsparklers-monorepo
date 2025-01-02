@@ -1,7 +1,7 @@
 [build]
 base = "apps/mhw-app"
 command = "npm run build"
-publish = "build/client"
+publish = "apps/mhw-app/build/client"
 
 [dev]
 base = "apps/mhw-app"

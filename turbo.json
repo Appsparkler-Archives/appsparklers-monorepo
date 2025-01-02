@@ -23,9 +23,21 @@
       "persistent": true,
       "cache": false
     },
-    "deploy": {
+    "netlify:build": {
+      "cache": true,
+      "inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
+      "outputs": ["build"],
+      "dependsOn": ["^build"]
+    },
+    "netlify:deploy": {
       "cache": false,
-      "interactive": true
+      "interactive": true,
+      "dependsOn": ["netlify:build"]
+    },
+    "netlify:deploy:prod": {
+      "cache": false,
+      "interactive": true,
+      "dependsOn": ["netlify:build"]
     }
   }
 }
