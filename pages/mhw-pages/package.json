@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "build": "npm run css && tsc --p ./tsconfig.build.json && vite build",
     "css": "tailwindcss -i ./.storybook/input.css -o ./.storybook/output.css",
     "css:watch": "tailwindcss -i ./.storybook/input.css -o ./.storybook/output.css -w",
     "lint": "eslint .",

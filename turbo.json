@@ -5,20 +5,16 @@
     "dev": {
       "persistent": true,
       "cache": false,
-      "dependsOn": ["^build", "^css"]
+      "dependsOn": ["^build"]
     },
     "css:watch": {
       "persistent": true,
       "cache": false
     },
-    "css": {
-      "inputs": ["**/*.{ts,tsx,js,jsx,css}"],
-      "outputs": ["**/*.css"]
-    },
     "build": {
       "inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
       "outputs": ["dist", "build"],
-      "dependsOn": ["^build", "css"]
+      "dependsOn": ["^build"]
     },
     "lint": {
       "inputs": ["**/*.{ts,tsx}"]
