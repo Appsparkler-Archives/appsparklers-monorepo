@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { PrivacyPolicyPage } from "./PrivacyPolicyPage";
 
 const meta = {
-  title: "Pages/Privacy Policy Page/Privacy Policy Page",
+  title: "Pages/Privacy Policy Page",
   component: PrivacyPolicyPage,
   parameters: {
     layout: "fullscreen",

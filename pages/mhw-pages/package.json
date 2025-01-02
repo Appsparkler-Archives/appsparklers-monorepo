@@ -23,6 +23,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.3",
     "@eslint/js": "^9.17.0",
+    "@remix-run/react": "^2.15.2",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
     "@storybook/blocks": "^8.4.7",
@@ -43,7 +44,9 @@
     "globals": "^15.14.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1",
     "storybook": "^8.4.7",
+    "storybook-addon-remix-react-router": "^3.0.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.1.6",
     "typescript-eslint": "^8.18.2",
