@@ -21,7 +21,7 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime"],
+      external: ["react", "react/jsx-runtime", "@remix-run/react"],
       input: Object.fromEntries(
         glob
           .sync("lib/**/*.{ts,tsx}", {

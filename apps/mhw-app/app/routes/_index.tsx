@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
 import { App } from "./App";
-import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,10 +8,5 @@ export const meta: MetaFunction = () => {
   ];
 };
 export default function Index() {
-  return (
-    <>
-      <Link to="privacy">Privacy Policy</Link>
-      <App />
-    </>
-  );
+  return <App />;
 }
