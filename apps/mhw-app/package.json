@@ -13,8 +13,8 @@
     "start": "netlify serve",
     "typecheck": "tsc",
     "netlify:build": "netlify build",
-    "netlify:deploy": "netlify deploy --open",
-    "netlify:deploy:prod": "netlify deploy --prod --open"
+    "deploy": "netlify deploy --open",
+    "deploy:prod": "netlify deploy --prod --open"
   },
   "dependencies": {
     "@netlify/edge-functions": "^2.3.1",

@@ -29,12 +29,12 @@
       "outputs": ["build"],
       "dependsOn": ["^build"]
     },
-    "netlify:deploy": {
+    "deploy": {
       "cache": false,
       "interactive": true,
       "dependsOn": ["netlify:build"]
     },
-    "netlify:deploy:prod": {
+    "deploy:prod": {
       "cache": false,
       "interactive": true,
       "dependsOn": ["netlify:build"]
