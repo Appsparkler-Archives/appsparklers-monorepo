@@ -24,7 +24,7 @@
       "cache": false
     },
     "netlify:build": {
-      "cache": true,
+      "cache": false,
       "inputs": [
         "**/*.{ts,tsx}",
         "tsconfig*.json",
