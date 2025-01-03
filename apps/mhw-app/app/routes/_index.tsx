@@ -3,8 +3,11 @@ import { App } from "./App";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "My HFN World" },
+    {
+      name: "description",
+      content: "An app to support us in our daily HFN abhyaas.",
+    },
   ];
 };
 export default function Index() {
