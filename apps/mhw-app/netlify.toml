@@ -4,8 +4,7 @@ command = "npm run build"
 publish = "apps/mhw-app/build/client"
 
 [dev]
-base = "apps/mhw-app"
-publish = "build/client"
+base = "./apps/mhw-app"
 command = "npm run _dev"
 framework = "vite"
 
