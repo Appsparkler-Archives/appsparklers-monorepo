@@ -8,7 +8,9 @@
     "mhw:sb": "concurrently 'npm run _mhw:pages:css:watch' 'npm run _mhw:pages:dev' --prefix-colors='bgYellow,bgBlue'",
     "_mhw:app:dev": "turbo dev --filter=@repo/apps-mhw",
     "_mhw:app:css:watch": "turbo css:watch --filter=@repo/apps-mhw",
-    "mhw:app": "concurrently 'npm run _mhw:app:css:watch' 'npm run _mhw:app:dev' --prefix-colors='bgYellow,bgBlue'"
+    "mhw:app": "concurrently 'npm run _mhw:app:css:watch' 'npm run _mhw:app:dev' --prefix-colors='bgYellow,bgBlue'",
+    "mhw:deploy": "turbo deploy --filter @repo/apps-mhw",
+    "mhw:deploy:prod": "turbo deploy:prod --filter @repo/apps-mhw"
   },
   "engines": {
     "node": ">=18"

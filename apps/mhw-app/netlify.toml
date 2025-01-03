@@ -2,6 +2,7 @@
 base = "apps/mhw-app"
 command = "npm run build"
 publish = "apps/mhw-app/build/client"
+edge_functions = ".netlify/edge-functions"
 
 [dev]
 base = "./apps/mhw-app"
@@ -19,3 +20,4 @@ for = "/build/*"
 
 [functions]
 directory=".netlify/edge-functions"
+
