@@ -16,7 +16,12 @@ const meta = {
 } satisfies Meta<typeof HomePage>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const HomePageExample: Story = {};
-HomePageExample.storyName = "Home Page";
+export const WithDate: Story = {};
+export const WithoutDate: Story = {
+  args: {
+    messageDate: undefined,
+  },
+};

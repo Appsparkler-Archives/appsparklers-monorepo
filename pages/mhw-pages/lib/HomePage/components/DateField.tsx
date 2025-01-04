@@ -1,12 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type HTMLInputChangeHandler = React.ChangeEventHandler<HTMLInputElement>;
-
-const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
-
-const defaultDate = new Date(Date.now() - GMTOffset)
-  .toISOString()
-  .split("T")[0];
 
 export interface IDateFieldProps {
   onChangeDate: (date: string) => void;
@@ -14,6 +8,7 @@ export interface IDateFieldProps {
 }
 
 export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
+  const [defaultDate, setDetaultDate] = useState<string | number>(Date.now());
   const handleChangeDate: HTMLInputChangeHandler = (evt) => {
     if (evt.target.value) {
       onChangeDate(evt.target.value);
@@ -21,6 +16,11 @@ export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
   };
 
   useEffect(() => {
+    const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
+    const defaultDate = new Date(Date.now() - GMTOffset)
+      .toISOString()
+      .split("T")[0];
+    setDetaultDate(defaultDate);
     onChangeDate(defaultDate);
   }, [onChangeDate]);
 
@@ -32,7 +32,7 @@ export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
       <input
         type="date"
         disabled={disabled}
-        defaultValue={defaultDate}
+        defaultValue={undefined}
         placeholder="Select Date"
         className="input input-bordered w-full"
         onChange={handleChangeDate}
