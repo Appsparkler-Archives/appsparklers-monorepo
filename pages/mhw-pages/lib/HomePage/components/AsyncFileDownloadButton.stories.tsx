@@ -9,10 +9,11 @@ const meta = {
     layout: "fullscreen",
   },
   args: {
+    // pdfDownloadLink: "http://babujishriramchandra.fr/pdfs/Reality_at_Dawn.pdf",
     pdfDownloadLink:
       "https://firebasestorage.googleapis.com/v0/b/my-hfn.firebasestorage.app/o/messages%2F2025-01-04.pdf?alt=media&token=87317045-471f-4933-a69c-52bbe4de1983",
-    inProgress: false,
-    onClick: fn(),
+    onFileDownloadError: fn(),
+    fileName: "reality-at-dawn.pdf",
   },
 } satisfies Meta<typeof AsyncFilieDownloadButton>;
 
