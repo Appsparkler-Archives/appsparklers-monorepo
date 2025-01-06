@@ -36,7 +36,11 @@ export const HomePageContent = ({
 
   return (
     <main className="flex flex-col gap-4 p-4 bg-base-100 opacity-[0.98]">
-      <DateField onChangeDate={handleChangeDate} disabled={isDisabled} />
+      <DateField
+        onChangeDate={handleChangeDate}
+        broadcastDate={messageDate}
+        disabled={isDisabled}
+      />
       <MessageLink
         messageBroadcastDate={messageDate}
         messageLink={messageLink}

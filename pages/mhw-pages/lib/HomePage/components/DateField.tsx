@@ -5,7 +5,7 @@ type HTMLInputChangeHandler = React.ChangeEventHandler<HTMLInputElement>;
 export interface IDateFieldProps {
   onChangeDate: (date: string) => void;
   disabled: boolean;
-  broadcastDate: string; // 2024-09-01 - September 1st, 2024
+  broadcastDate?: string; // 2024-09-01 - September 1st, 2024
 }
 
 export const DateField = ({
