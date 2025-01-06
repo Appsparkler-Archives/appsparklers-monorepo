@@ -12,6 +12,7 @@ export const MessageLink = ({
   pdfDownloadLink,
   isCheckingForFile: disabled,
 }: IMessageLinkProps) => {
+  
   const className = useMemo(() => {
     if (disabled) {
       return "btn btn-disabled w-full rounded-none h-auto";
@@ -19,6 +20,7 @@ export const MessageLink = ({
       return "btn btn-primary w-full rounded-none h-auto";
     }
   }, [disabled]);
+
   return (
     <a href={pdfDownloadLink} className={className} download>
       Read Whisper From The Brighter World broadcasted on:{" "}

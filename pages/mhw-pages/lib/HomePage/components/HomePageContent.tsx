@@ -1,5 +1,4 @@
 import { DateField, IDateFieldProps } from "./DateField";
-import { MessageLink } from "./MessageLink";
 import { OBTLink } from "./OBTLink";
 import { TenMaximsLink } from "./TenMaximsLink";
 import { AWATAndAQLink } from "./AWATAndAQLink";
@@ -7,6 +6,7 @@ import { ImportantLinks } from "./ImportantLinks";
 import { useBoolean } from "usehooks-ts";
 import { useCallback } from "react";
 import { PrivacyPolicyLink } from "./PrivacyPolicyLink";
+import { AsyncFileDownloadButton } from "./AsyncFilieDownloadButton";
 
 export interface IHomePageContentProps {
   onChangeBroadcastDate: (date: string) => Promise<void>;
@@ -41,10 +41,13 @@ export const HomePageContent = ({
         broadcastDate={messageDate}
         isCheckingForFile={isDisabled}
       />
-      <MessageLink
-        messageBroadcastDate={messageDate}
-        pdfDownloadLink={messageLink}
+      <AsyncFileDownloadButton
         isCheckingForFile={isDisabled}
+        messageBroadcastDate={messageDate}
+        onFileDownloadError={function (): void {
+          throw new Error("There was a problem downloading the file.");
+        }}
+        pdfDownloadLink={messageLink || ""}
       />
       <OBTLink />
       <AWATAndAQLink />

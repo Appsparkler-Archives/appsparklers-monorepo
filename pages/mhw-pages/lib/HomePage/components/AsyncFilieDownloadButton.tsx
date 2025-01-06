@@ -1,17 +1,20 @@
 import { useCallback } from "react";
 import { useBoolean } from "usehooks-ts";
+import { formatDate } from "./utils/formatDate";
 
-export const AsyncFilieDownloadButton = ({
-  fileName,
+interface IAsyncFileDownloadButtonProps {
+  messageBroadcastDate?: string;
+  isCheckingForFile: boolean;
+  pdfDownloadLink: string;
+  onFileDownloadError: (error: Error) => void;
+}
+
+export const AsyncFileDownloadButton = ({
+  messageBroadcastDate,
   isCheckingForFile,
   pdfDownloadLink,
   onFileDownloadError,
-}: {
-  isCheckingForFile: boolean;
-  fileName: string;
-  onFileDownloadError: (error: Error) => void;
-  pdfDownloadLink: string;
-}) => {
+}: IAsyncFileDownloadButtonProps) => {
   const {
     value: isDownloading,
     setFalse: setIsDownloadingToFalse,
@@ -26,7 +29,9 @@ export const AsyncFilieDownloadButton = ({
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = fileName || "message.pdf";
+        link.download = messageBroadcastDate
+          ? `message-${messageBroadcastDate}.pdf`
+          : "message.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -42,7 +47,7 @@ export const AsyncFilieDownloadButton = ({
       setIsDownloadingToFalse();
     }
   }, [
-    fileName,
+    messageBroadcastDate,
     onFileDownloadError,
     pdfDownloadLink,
     setIsDownloadingToFalse,
@@ -59,7 +64,8 @@ export const AsyncFilieDownloadButton = ({
       onClick={handleClick}
       disabled={isCheckingForFile || isDownloading}
     >
-      Read Whisper From The Brighter World broadcasted on: Nov 22nd, 2024
+      Read Whisper From The Brighter World broadcasted on:{" "}
+      {messageBroadcastDate && formatDate(new Date(messageBroadcastDate))}
       <span
         className={`loading loading-dots loading-sm absolute ${visibility}`}
       />
