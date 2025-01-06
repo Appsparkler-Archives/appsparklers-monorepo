@@ -39,7 +39,7 @@ export const HomePageContent = ({
       <DateField
         onChangeDate={handleChangeDate}
         broadcastDate={messageDate}
-        disabled={isDisabled}
+        isCheckingForFile={isDisabled}
       />
       <MessageLink
         messageBroadcastDate={messageDate}

@@ -10,7 +10,7 @@ const meta = {
   },
   args: {
     onChangeDate: fn(),
-    disabled: false,
+    isCheckingForFile: false,
     broadcastDate: "2024-11-22",
   },
 } satisfies Meta<typeof DateField>;
