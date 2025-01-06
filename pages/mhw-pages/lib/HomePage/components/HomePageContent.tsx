@@ -6,7 +6,7 @@ import { ImportantLinks } from "./ImportantLinks";
 import { useBoolean } from "usehooks-ts";
 import { useCallback } from "react";
 import { PrivacyPolicyLink } from "./PrivacyPolicyLink";
-import { AsyncFileDownloadButton } from "./AsyncFilieDownloadButton";
+import { AsyncFileDownloadButton } from "./AsyncFileDownloadButton";
 
 export interface IHomePageContentProps {
   onChangeBroadcastDate: (date: string) => Promise<void>;

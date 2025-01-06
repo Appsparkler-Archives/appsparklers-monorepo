@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AsyncFileDownloadButton } from "./AsyncFilieDownloadButton";
+import { AsyncFileDownloadButton } from "./AsyncFileDownloadButton";
 import { fn } from "@storybook/test";
 
 const meta = {
