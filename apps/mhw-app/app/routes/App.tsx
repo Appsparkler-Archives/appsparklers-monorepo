@@ -5,6 +5,7 @@ import {
   HomePageProps,
 } from "@repo/pages-mhw/dist/HomePage/HomePage";
 import { AlertMessage } from "@repo/pages-mhw/dist/HomePage/components/AlertMessage";
+import { getTodaysDateWithOffset } from "@repo/pages-mhw";
 
 export const getDownloadURLOriginal = async (date: string) => {
   return fetch(
@@ -12,10 +13,10 @@ export const getDownloadURLOriginal = async (date: string) => {
   ).then((res) => res.text());
 };
 
-const todaysDate = new Date().toISOString().split("T")[0];
-
 export const App = () => {
-  const [broadcastDate, setBroadcastDate] = useState<string>(todaysDate);
+  const [broadcastDate, setBroadcastDate] = useState<string>(
+    getTodaysDateWithOffset()
+  );
   const {
     value: isErrorShown,
     setFalse: hideErrorMessage,

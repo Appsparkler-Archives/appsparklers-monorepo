@@ -1,14 +1,7 @@
 import { useEffect, useRef } from "react";
+import { getTodaysDateWithOffset } from "./utils/getTodaysDateWithOffset";
 
 type HTMLInputChangeHandler = React.ChangeEventHandler<HTMLInputElement>;
-
-export const getTodaysDateWithOffset = (): string => {
-  const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
-  const todaysDate = new Date(Date.now() - GMTOffset)
-    .toISOString()
-    .split("T")[0];
-  return todaysDate;
-};
 
 export interface IDateFieldProps {
   onChangeDate: (date: string) => void;
@@ -31,8 +24,6 @@ export const DateField = ({
   useEffect(() => {
     onChangeDate(getTodaysDateWithOffset());
   }, [onChangeDate]);
-
-  console.log(inputRef?.current?.max);
 
   return (
     <label className="form-control w-full bg-base-100">
