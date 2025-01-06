@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useBoolean } from "usehooks-ts";
 import { formatDate } from "./utils/formatDate";
 
-interface IAsyncFileDownloadButtonProps {
+export interface IAsyncFileDownloadButtonProps {
   messageBroadcastDate?: string;
   isCheckingForFile: boolean;
   pdfDownloadLink: string;
