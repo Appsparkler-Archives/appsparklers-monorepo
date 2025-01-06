@@ -2,6 +2,14 @@ import { useEffect, useRef } from "react";
 
 type HTMLInputChangeHandler = React.ChangeEventHandler<HTMLInputElement>;
 
+export const getTodaysDateWithOffset = (): string => {
+  const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
+  const todaysDate = new Date(Date.now() - GMTOffset)
+    .toISOString()
+    .split("T")[0];
+  return todaysDate;
+};
+
 export interface IDateFieldProps {
   onChangeDate: (date: string) => void;
   isCheckingForFile: boolean;
@@ -21,15 +29,10 @@ export const DateField = ({
   };
 
   useEffect(() => {
-    const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
-    const todaysDate = new Date(Date.now() - GMTOffset)
-      .toISOString()
-      .split("T")[0];
-    if (inputRef?.current) {
-      inputRef.current.max = todaysDate;
-    }
-    onChangeDate(todaysDate);
+    onChangeDate(getTodaysDateWithOffset());
   }, [onChangeDate]);
+
+  console.log(inputRef?.current?.max);
 
   return (
     <label className="form-control w-full bg-base-100">
