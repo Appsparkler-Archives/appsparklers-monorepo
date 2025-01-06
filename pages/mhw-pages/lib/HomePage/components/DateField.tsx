@@ -12,7 +12,7 @@ export interface IDateFieldProps {
 export const DateField = ({
   broadcastDate,
   onChangeDate,
-  isCheckingForFile: disabled,
+  isCheckingForFile,
 }: IDateFieldProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const handleChangeDate: HTMLInputChangeHandler = (evt) => {
@@ -22,7 +22,11 @@ export const DateField = ({
   };
 
   useEffect(() => {
-    onChangeDate(getTodaysDateWithOffset());
+    const todaysDateWithOffset = getTodaysDateWithOffset();
+    if (inputRef.current) {
+      inputRef.current.max = todaysDateWithOffset;
+    }
+    onChangeDate(todaysDateWithOffset);
   }, [onChangeDate]);
 
   return (
@@ -33,7 +37,7 @@ export const DateField = ({
       <input
         ref={inputRef}
         type="date"
-        disabled={disabled}
+        disabled={isCheckingForFile}
         value={broadcastDate}
         placeholder="Select Date"
         className="input input-bordered w-full"
