@@ -44,7 +44,7 @@ export const HomePageContent = ({
       <MessageLink
         messageBroadcastDate={messageDate}
         messageLink={messageLink}
-        disabled={isDisabled}
+        isCheckingForFile={isDisabled}
       />
       <OBTLink />
       <AWATAndAQLink />

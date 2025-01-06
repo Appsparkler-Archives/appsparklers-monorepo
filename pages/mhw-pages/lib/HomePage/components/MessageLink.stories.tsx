@@ -10,7 +10,7 @@ const meta = {
   args: {
     messageBroadcastDate: "2024-11-22",
     messageLink: "https://www.appsparklers.com",
-    disabled: false,
+    isCheckingForFile: false,
   },
 } satisfies Meta<typeof MessageLink>;
 

@@ -4,13 +4,13 @@ import { formatDate } from "./utils/formatDate";
 export interface IMessageLinkProps {
   messageBroadcastDate?: string;
   messageLink?: string;
-  disabled: boolean;
+  isCheckingForFile: boolean;
 }
 
 export const MessageLink = ({
   messageBroadcastDate,
   messageLink,
-  disabled,
+  isCheckingForFile: disabled,
 }: IMessageLinkProps) => {
   const className = useMemo(() => {
     if (disabled) {
