@@ -43,7 +43,7 @@ export const HomePageContent = ({
       />
       <MessageLink
         messageBroadcastDate={messageDate}
-        messageLink={messageLink}
+        pdfDownloadLink={messageLink}
         isCheckingForFile={isDisabled}
       />
       <OBTLink />

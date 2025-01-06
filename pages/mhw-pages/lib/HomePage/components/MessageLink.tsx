@@ -3,13 +3,13 @@ import { formatDate } from "./utils/formatDate";
 
 export interface IMessageLinkProps {
   messageBroadcastDate?: string;
-  messageLink?: string;
+  pdfDownloadLink?: string;
   isCheckingForFile: boolean;
 }
 
 export const MessageLink = ({
   messageBroadcastDate,
-  messageLink,
+  pdfDownloadLink,
   isCheckingForFile: disabled,
 }: IMessageLinkProps) => {
   const className = useMemo(() => {
@@ -20,7 +20,7 @@ export const MessageLink = ({
     }
   }, [disabled]);
   return (
-    <a href={messageLink} className={className} download>
+    <a href={pdfDownloadLink} className={className} download>
       Read Whisper From The Brighter World broadcasted on:{" "}
       {messageBroadcastDate && formatDate(new Date(messageBroadcastDate))}
     </a>

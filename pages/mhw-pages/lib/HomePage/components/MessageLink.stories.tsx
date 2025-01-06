@@ -9,7 +9,7 @@ const meta = {
   },
   args: {
     messageBroadcastDate: "2024-11-22",
-    messageLink: "https://www.appsparklers.com",
+    pdfDownloadLink: "https://www.appsparklers.com",
     isCheckingForFile: false,
   },
 } satisfies Meta<typeof MessageLink>;
