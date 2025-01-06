@@ -1,14 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 type HTMLInputChangeHandler = React.ChangeEventHandler<HTMLInputElement>;
 
 export interface IDateFieldProps {
   onChangeDate: (date: string) => void;
   disabled: boolean;
+  broadcastDate: string; // 2024-09-01 - September 1st, 2024
 }
 
-export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
-  const [defaultDate, setDetaultDate] = useState<string | number>(Date.now());
+export const DateField = ({
+  broadcastDate,
+  onChangeDate,
+  disabled,
+}: IDateFieldProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
   const handleChangeDate: HTMLInputChangeHandler = (evt) => {
     if (evt.target.value) {
       onChangeDate(evt.target.value);
@@ -17,11 +22,13 @@ export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
 
   useEffect(() => {
     const GMTOffset = new Date().getTimezoneOffset() * 60 * 1000;
-    const defaultDate = new Date(Date.now() - GMTOffset)
+    const todaysDate = new Date(Date.now() - GMTOffset)
       .toISOString()
       .split("T")[0];
-    setDetaultDate(defaultDate);
-    onChangeDate(defaultDate);
+    if (inputRef?.current) {
+      inputRef.current.max = todaysDate;
+    }
+    onChangeDate(todaysDate);
   }, [onChangeDate]);
 
   return (
@@ -30,14 +37,14 @@ export const DateField = ({ onChangeDate, disabled }: IDateFieldProps) => {
         <span className="label-text">Select broadcast date:</span>
       </div>
       <input
+        ref={inputRef}
         type="date"
         disabled={disabled}
-        defaultValue={undefined}
+        value={broadcastDate}
         placeholder="Select Date"
         className="input input-bordered w-full"
         onChange={handleChangeDate}
         min={"2019-01-09"}
-        max={defaultDate}
       />
       <div className="label">
         <span className="label-text-alt">
