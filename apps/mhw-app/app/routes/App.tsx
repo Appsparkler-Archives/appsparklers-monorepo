@@ -4,7 +4,7 @@ import {
   HomePage,
   HomePageProps,
 } from "@repo/pages-mhw/dist/HomePage/HomePage";
-import { AlertMessage } from "@repo/pages-mhw";
+import { AlertMessage } from "@repo/pages-mhw/dist/HomePage/components/AlertMessage";
 
 export const getDownloadURLOriginal = async (date: string) => {
   return fetch(
