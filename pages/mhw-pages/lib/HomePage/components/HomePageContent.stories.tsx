@@ -10,6 +10,7 @@ const meta = {
   },
   args: {
     onChangeBroadcastDate: fn(),
+    onFileDownloadError: fn(),
   },
 } satisfies Meta<typeof HomePageContent>;
 

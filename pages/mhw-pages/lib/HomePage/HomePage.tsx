@@ -10,6 +10,7 @@ export const HomePage = ({
   onChangeBroadcastDate,
   messageDate,
   messageLink,
+  onFileDownloadError,
 }: HomePageProps) => {
   return (
     <div className="flex flex-col w-full items-center">
@@ -19,6 +20,7 @@ export const HomePage = ({
           onChangeBroadcastDate={onChangeBroadcastDate}
           messageLink={messageLink}
           messageDate={messageDate}
+          onFileDownloadError={onFileDownloadError}
         />
         <div className="h-6 bg-primary border-8 border-base-100" />
       </div>

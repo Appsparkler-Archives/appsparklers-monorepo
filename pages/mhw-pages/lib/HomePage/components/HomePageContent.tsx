@@ -6,18 +6,23 @@ import { ImportantLinks } from "./ImportantLinks";
 import { useBoolean } from "usehooks-ts";
 import { useCallback } from "react";
 import { PrivacyPolicyLink } from "./PrivacyPolicyLink";
-import { AsyncFileDownloadButton } from "./AsyncFileDownloadButton";
+import {
+  AsyncFileDownloadButton,
+  IAsyncFileDownloadButtonProps,
+} from "./AsyncFileDownloadButton";
 
 export interface IHomePageContentProps {
   onChangeBroadcastDate: (date: string) => Promise<void>;
   messageLink?: string;
   messageDate?: string;
+  onFileDownloadError: IAsyncFileDownloadButtonProps["onFileDownloadError"];
 }
 
 export const HomePageContent = ({
   onChangeBroadcastDate,
   messageDate,
   messageLink,
+  onFileDownloadError,
 }: IHomePageContentProps) => {
   const {
     value: isDisabled,
@@ -44,9 +49,7 @@ export const HomePageContent = ({
       <AsyncFileDownloadButton
         isCheckingForFile={isDisabled}
         messageBroadcastDate={messageDate}
-        onFileDownloadError={function (): void {
-          throw new Error("There was a problem downloading the file.");
-        }}
+        onFileDownloadError={onFileDownloadError}
         pdfDownloadLink={messageLink || ""}
       />
       <OBTLink />

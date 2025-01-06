@@ -12,6 +12,7 @@ const meta = {
     onChangeBroadcastDate: fn(),
     messageLink: "https://www.appsparklers.com",
     messageDate: "2024-11-22",
+    onFileDownloadError: fn(),
   },
 } satisfies Meta<typeof HomePage>;
 

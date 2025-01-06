@@ -45,6 +45,7 @@ export const App = () => {
         onChangeBroadcastDate={handleChangeBroadcastDate}
         messageLink={downloadURL || ""}
         messageDate={broadcastDate}
+        onFileDownloadError={showErrorMessage}
       />
     </>
   );
