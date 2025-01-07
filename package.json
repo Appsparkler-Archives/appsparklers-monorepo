@@ -10,7 +10,10 @@
     "_mhw:app:css:watch": "turbo css:watch --filter=@repo/apps-mhw",
     "mhw:app": "concurrently 'npm run _mhw:app:css:watch' 'npm run _mhw:app:dev' --prefix-colors='bgYellow,bgBlue'",
     "mhw:deploy": "turbo deploy --filter @repo/apps-mhw",
-    "mhw:deploy:prod": "turbo deploy:prod --filter @repo/apps-mhw"
+    "mhw:deploy:prod": "turbo deploy:prod --filter @repo/apps-mhw",
+    "hc:dev": "netlify dev --filter apps/hc-app",
+    "hc:deploy": "netlify deploy --filter apps/hc-app --build --open",
+    "hc:deploy:prod": "netlify deploy --filter apps/hc-app --prod --build --open"
   },
   "engines": {
     "node": ">=18"
