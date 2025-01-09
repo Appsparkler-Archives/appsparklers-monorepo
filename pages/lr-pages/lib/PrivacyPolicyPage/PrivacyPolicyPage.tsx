@@ -43,7 +43,7 @@ export const PrivacyPolicyPage = () => {
           </p>
           <p>
             If you have any questions or concerns about this Privacy Policy,
-            please feel free to contact us at
+            please feel free to contact us at{" "}
             <a href="mailto:appsparkler@gmail.com">appsparkler@gmail.com</a>.
           </p>
           <p>
