@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "_dev": "remix vite:dev",
-    "dev": "rimraf build && netlify dev",
+    "dev": "rimraf build .netlify/edge-functions && netlify dev",
     "build": "npm run css && remix vite:build",
     "css": "tailwindcss -i ./app/input.css -o ./app/output.css",
     "css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
