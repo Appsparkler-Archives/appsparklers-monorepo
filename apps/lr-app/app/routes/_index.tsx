@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,5 +12,13 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <div>LR App...</div>;
+  return (
+    <div className="bg-base-100 p-4">
+      LR App...
+      <br />
+      <Link to="/privacy" className="btn btn-primary">
+        Privacy Policy
+      </Link>
+    </div>
+  );
 }
