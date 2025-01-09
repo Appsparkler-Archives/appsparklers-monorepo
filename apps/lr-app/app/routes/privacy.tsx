@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
+import { PrivacyPolicyPage } from "@repo/pages-lr";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,5 +18,5 @@ export const meta: MetaFunction = () => {
  */
 
 export default function PrivacyPage() {
-  return <div>Privacy Policy Page</div>;
+  return <PrivacyPolicyPage />;
 }
