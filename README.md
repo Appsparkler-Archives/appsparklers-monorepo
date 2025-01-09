@@ -1,4 +1,5 @@
 # appsparklers
+
 A monorepo for all web apps crafted at [appsparklers](https://www.appsparklers.com).
 
 ## Setup
@@ -13,7 +14,7 @@ npm i
 
 ## 📦 My HFN World (MHW App)
 
-### Start the MHW app pages Storybook with:
+### ⚙️ Start the MHW app pages Storybook with:
 
 ```sh
 npm run mhw:sb
@@ -59,4 +60,32 @@ npm run hc:deploy
 
 ```sh
 npm run hc:deploy:prod
+```
+
+## 📦 Lets Recite App (LR App)
+
+### ⚙️ Start the LR app pages Storybook with:
+
+```sh
+npm run lr:sb
+```
+
+### ⚙️ Start the LR app in dev mode with:
+
+```sh
+npm run lr:app
+```
+
+### 🚀 Deploy the LR App
+
+- dev deployment
+
+```sh
+npm run lr:deploy
+```
+
+- prod deployment
+
+```sh
+npm run lr:deploy:prod
 ```
