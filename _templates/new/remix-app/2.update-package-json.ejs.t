@@ -27,7 +27,6 @@ to: "apps/<%= shortName %>-app/package.json"
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
-    "@repo/pages-lr": "^0.0.0",
     "isbot": "^4.1.0"
   },
   "devDependencies": {

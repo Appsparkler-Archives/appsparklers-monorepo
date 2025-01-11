@@ -2,7 +2,7 @@ const prompts = [
   {
     type: "input",
     require: true,
-    name: "projectName",
+    name: "appName",
     message: "What is the name of your app? 😍",
     default: "My Awesome App",
   },
@@ -25,6 +25,5 @@ const prompts = [
     },
   },
 ];
-
 
 module.exports = prompts;
