@@ -1,12 +1,14 @@
 module.exports = [
   {
     type: "input",
+    require: true,
     name: "projectName",
     message: "What is the name of your app? 😍",
     default: "My Awesome App",
   },
   {
     type: "input",
+    required: true,
     name: "shortName",
     message:
       "What is the short name for your app? (for ex. Awesome App is `aa` whereas Cool App is `ca`) 😍",
