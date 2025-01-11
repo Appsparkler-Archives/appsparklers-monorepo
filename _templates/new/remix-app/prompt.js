@@ -1,4 +1,4 @@
-module.exports = [
+const prompts = [
   {
     type: "input",
     require: true,
@@ -25,3 +25,6 @@ module.exports = [
     },
   },
 ];
+
+
+module.exports = prompts;
