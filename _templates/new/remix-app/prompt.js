@@ -9,7 +9,7 @@ module.exports = [
     type: "input",
     name: "shortName",
     message:
-      "What is the short name for your app? (for ex. Awesome App is `aa` whereas Cool app is `ca`) 😍",
+      "What is the short name for your app? (for ex. Awesome App is `aa` whereas Cool App is `ca`) 😍",
     default: "mwa",
     validate: (value) => {
       const matchesLowerCase = value.match(/[a-z]/g);
