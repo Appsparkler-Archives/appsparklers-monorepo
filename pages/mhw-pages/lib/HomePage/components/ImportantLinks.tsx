@@ -2,7 +2,7 @@ export const ImportantLinks = () => {
   return (
     <section>
       <h4 className="font-bold">Important Links</h4>
-      <ol className="menu menu-md bg-primary">
+      <ol className="menu menu-md bg-primary w-full">
         {[
           {
             label: "Daaji.org",
@@ -10,7 +10,7 @@ export const ImportantLinks = () => {
           },
           {
             label: "Heartfulness Masterclass",
-            url: "https://heartfulness.org/global/masterclass"
+            url: "https://heartfulness.org/global/masterclass",
           },
           {
             label: "Bhandara Messages",

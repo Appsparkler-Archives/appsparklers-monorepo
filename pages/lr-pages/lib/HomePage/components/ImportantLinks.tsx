@@ -10,7 +10,7 @@ export const ImportantLinks = () => {
           },
           {
             label: "Heartfulness Masterclass",
-            url: "https://heartfulness.org/global/masterclass"
+            url: "https://heartfulness.org/global/masterclass",
           },
           {
             label: "Bhandara Messages",

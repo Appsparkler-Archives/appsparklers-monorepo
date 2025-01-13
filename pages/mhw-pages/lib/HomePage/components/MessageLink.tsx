@@ -12,12 +12,11 @@ export const MessageLink = ({
   pdfDownloadLink,
   isCheckingForFile: disabled,
 }: IMessageLinkProps) => {
-  
   const className = useMemo(() => {
     if (disabled) {
       return "btn btn-disabled w-full rounded-none h-auto";
     } else {
-      return "btn btn-primary w-full rounded-none h-auto";
+      return "btn w-full rounded-none h-auto";
     }
   }, [disabled]);
 

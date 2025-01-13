@@ -6,7 +6,14 @@ export const PrivacyPolicyLink = () => {
       <Link
         to="/privacy"
         target="_blank"
-        className="btn rounded-none btn-sm w-full btn-ghost text-sm"
+        className="btn btn-primary w-full rounded-none h-auto p-1"
+      >
+        Privacy Policy
+      </Link>
+      <Link
+        to="/privacy"
+        target="_blank"
+        className="btn btn-primary w-full rounded-none h-auto p-1"
       >
         Privacy Policy
       </Link>

@@ -59,7 +59,7 @@ export const AsyncFileDownloadButton = ({
 
   return (
     <button
-      className="btn btn-primary rounded-none h-auto"
+      className="btn btn-primary rounded-none p-1 h-auto"
       type="button"
       onClick={handleClick}
       disabled={isCheckingForFile || isDownloading}

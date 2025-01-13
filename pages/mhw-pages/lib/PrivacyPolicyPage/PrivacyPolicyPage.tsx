@@ -6,7 +6,7 @@ export const PrivacyPolicyPage = () => {
       <div className="flex flex-col justify-center max-w-sm bg-base-100">
         <div className="navbar bg-primary text-primary-content border-8 border-base-100">
           <div className="flex-1">
-            <Link to="/" className="text-xl btn btn-ghost">
+            <Link to="/" className="btn text-xl btn-ghost">
               My HFN World
             </Link>
           </div>
