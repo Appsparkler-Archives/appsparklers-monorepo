@@ -31,25 +31,22 @@ export const DateField = ({
 
   return (
     <label className="form-control w-full bg-base-100">
-      <div className="label">
-        <span className="label-text">Select broadcast date:</span>
-      </div>
-      <input
-        ref={inputRef}
-        type="date"
-        disabled={isCheckingForFile}
-        value={broadcastDate}
-        placeholder="Select Date"
-        className="input input-bordered w-full"
-        onChange={handleChangeDate}
-        min={"2019-01-09"}
-      />
-      <div className="label">
-        <span className="label-text-alt">
+      <fieldset className="fieldset">
+        <legend className="fieldset-legend">Select broadcast date:</legend>
+        <input
+          ref={inputRef}
+          type="date"
+          disabled={isCheckingForFile}
+          value={broadcastDate}
+          placeholder="Select Date"
+          className="input w-full"
+          onChange={handleChangeDate}
+          min={"2019-01-09"}
+        />
+        <p className="fieldset-label">
           Click on the calendar or input field to enter the date.
-        </span>
-        {/* <span className="label-text-alt">Bottom Right label</span> */}
-      </div>
+        </p>
+      </fieldset>
     </label>
   );
 };
