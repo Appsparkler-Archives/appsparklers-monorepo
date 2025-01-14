@@ -3,7 +3,7 @@ import prosePlugin from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./lib/**/*.{html,tsx,ts}"],
+  content: ["./lib/**/*.{html,tsx,ts,mdx}"],
   theme: {
     extend: {},
   },

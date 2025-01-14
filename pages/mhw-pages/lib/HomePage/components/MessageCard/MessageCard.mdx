@@ -1,0 +1,65 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import * as MessageCardStories from "./MessageCard.stories";
+
+<Meta of={MessageCardStories} />
+
+# Message Card Story
+
+## Initial Render
+
+When the page loads; we pick up the date from the client system and set it on the input-field. It is important to pick the date from the client as there might be a difference between client and server date-time.
+
+Once we have determined the date, we make an API call to check if the messages are available in both languages - Hindi and English. During this time, we disable the input field and the download button to avoid user interaction. We also show a processing/loading indicator on the button while this is happening.
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.InitialRender} layout="centered" />
+</div>
+
+## Message Verified For The Broadcast Date
+
+Once the message is verified that it exists, we show clickable buttons and the date-select field.
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.VerifiedBroadcastDate} layout="centered" />
+</div>
+
+## Verification Error In One Or Both Messages
+
+If there's a verification error in one or both of the messages (for ex. the message couldn't be fetched, etc.); in that case, we stop the processing but add an error message.
+
+### Error in Hindi message:
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.HindiMessageError} layout="centered" />
+</div>
+
+### Error in English message:
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.EnglishMessageError} layout="centered" />
+</div>
+
+### Error in both Hindi & English Messages:
+
+<div className="max-w-sm">
+  <Canvas
+    of={MessageCardStories.HindAndEnglishMessageError}
+    layout="centered"
+  />
+</div>
+
+## State When Downloading The Messages
+
+When the message is being downloaded, we disable the respective button for which message is being downloaded (Hindi or English or Both) and also show a loading indicator:
+
+### Downloading the Hindi message:
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.DownloadingHindiMessage} layout="centered" />
+</div>
+
+### Downloading the English message:
+
+<div className="max-w-sm">
+  <Canvas of={MessageCardStories.DownloadingEnglishMessage} layout="centered" />
+</div>
