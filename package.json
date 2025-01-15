@@ -41,7 +41,8 @@
   "packageManager": "npm@10.8.2",
   "workspaces": [
     "pages/*",
-    "apps/*"
+    "apps/*",
+    "configs/*"
   ],
   "devDependencies": {
     "concurrently": "^9.1.1",
