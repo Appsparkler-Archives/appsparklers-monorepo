@@ -51,6 +51,10 @@
 			"cache": false,
 			"interactive": true,
 			"dependsOn": ["netlify:build"]
+		},
+		"//#format-and-lint": {},
+		"//#format-and-lint:fix": {
+			"cache": false
 		}
 	}
 }

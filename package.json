@@ -3,6 +3,8 @@
 	"private": true,
 	"scripts": {
 		"clean": "npx rimraf package-lock.json **/node_modules",
+		"format-and-lint": "biome check .",
+		"format-and-lint:fix": "biome check . --write",
 		"MHW": "<---------My HFN WORLD--------->",
 		"_mhw:pages:dev": "turbo dev --filter=@repo/pages-mhw",
 		"_mhw:pages:css:watch": "turbo css:watch --filter=@repo/pages-mhw",
