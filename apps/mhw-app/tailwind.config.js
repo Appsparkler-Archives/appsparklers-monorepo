@@ -1,9 +1,9 @@
-// import daisyuiPlugin from "daisyui";
 import prosePlugin from "@tailwindcss/typography";
+// eslint-disable-next-line import/no-nodejs-modules
 import { resolve } from "path";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [resolve("../../pages/mhw-pages/lib/**/*.{js,jsx,ts,tsx}")],
   // daisyui: {
   //   darkTheme: true,
