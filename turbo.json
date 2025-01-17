@@ -17,7 +17,15 @@
       "dependsOn": ["^build"]
     },
     "lint": {
-      "inputs": ["**/*.{ts,tsx}"]
+      "inputs": [
+        "eslint.config.js",
+        ".storybook/**/*.{ts,tsx,js}",
+        "{lib,app}/**/*.{ts,tsx,js,jsx}",
+        "public/**/*.{ts,tsx,js,jsx,html}",
+        "package.json",
+        "tailwind.config.js",
+        "vite.config.ts"
+      ]
     },
     "start": {
       "persistent": true,

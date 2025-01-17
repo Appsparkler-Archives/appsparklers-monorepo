@@ -1,12 +1,9 @@
 import type { Preview } from "@storybook/react";
 import "./output.css";
-import { BrowserRouterDecorator } from "../decorators/BrowserRouterDecorator";
+import { BrowserRouterDecorator } from "./decorators/BrowserRouterDecorator";
 
 const preview: Preview = {
-  decorators: [
-    // withRouter,
-    BrowserRouterDecorator,
-  ],
+  decorators: [BrowserRouterDecorator],
   parameters: {
     controls: {
       matchers: {

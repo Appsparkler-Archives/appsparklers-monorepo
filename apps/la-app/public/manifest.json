@@ -1,9 +1,0 @@
-{
-  "name": "Library App",
-  "short_name": "la",
-  "description": "Description for Library App",
-  "id": "/",
-  "display_override": ["window-controls-overlay", "standalone", "browser"],
-  "start_url": ".",
-  "display": "standalone"
-}
