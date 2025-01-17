@@ -1,33 +1,30 @@
 {
-  "name": "appsparklers",
-  "private": true,
-  "scripts": {
-    "clean": "npx rimraf package-lock.json **/node_modules",
-    "MHW": "<---------My HFN WORLD--------->",
-    "_mhw:pages:dev": "turbo dev --filter=@repo/pages-mhw",
-    "_mhw:pages:css:watch": "turbo css:watch --filter=@repo/pages-mhw",
-    "mhw:sb": "concurrently 'npm run _mhw:pages:css:watch' 'npm run _mhw:pages:dev' --prefix-colors='bgYellow,bgBlue'",
-    "_mhw:app:dev": "turbo dev --filter=@repo/apps-mhw",
-    "_mhw:app:css:watch": "turbo css:watch --filter=@repo/apps-mhw",
-    "mhw:app": "concurrently 'npm run _mhw:app:css:watch' 'npm run _mhw:app:dev' --prefix-colors='bgYellow,bgBlue'",
-    "mhw:deploy": "turbo deploy --filter @repo/apps-mhw",
-    "mhw:deploy:prod": "turbo deploy:prod --filter @repo/apps-mhw",
-    "HC": "<---------HEARTFUL COMMUNICATION--------->",
-    "hc:dev": "netlify dev --filter apps/hc-app",
-    "hc:deploy": "netlify deploy --filter apps/hc-app --build --open",
-    "hc:deploy:prod": "netlify deploy --filter apps/hc-app --prod --build --open"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "npm@10.8.2",
-  "workspaces": [
-    "pages/*",
-    "apps/*",
-    "configs/*"
-  ],
-  "devDependencies": {
-    "concurrently": "^9.1.1",
-    "turbo": "^2.3.3"
-  }
+	"name": "appsparklers",
+	"private": true,
+	"scripts": {
+		"clean": "npx rimraf package-lock.json **/node_modules",
+		"MHW": "<---------My HFN WORLD--------->",
+		"_mhw:pages:dev": "turbo dev --filter=@repo/pages-mhw",
+		"_mhw:pages:css:watch": "turbo css:watch --filter=@repo/pages-mhw",
+		"mhw:sb": "concurrently 'npm run _mhw:pages:css:watch' 'npm run _mhw:pages:dev' --prefix-colors='bgYellow,bgBlue'",
+		"_mhw:app:dev": "turbo dev --filter=@repo/apps-mhw",
+		"_mhw:app:css:watch": "turbo css:watch --filter=@repo/apps-mhw",
+		"mhw:app": "concurrently 'npm run _mhw:app:css:watch' 'npm run _mhw:app:dev' --prefix-colors='bgYellow,bgBlue'",
+		"mhw:deploy": "turbo deploy --filter @repo/apps-mhw",
+		"mhw:deploy:prod": "turbo deploy:prod --filter @repo/apps-mhw",
+		"HC": "<---------HEARTFUL COMMUNICATION--------->",
+		"hc:dev": "netlify dev --filter apps/hc-app",
+		"hc:deploy": "netlify deploy --filter apps/hc-app --build --open",
+		"hc:deploy:prod": "netlify deploy --filter apps/hc-app --prod --build --open"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "npm@10.8.2",
+	"workspaces": ["pages/*", "apps/*", "configs/*"],
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"concurrently": "^9.1.1",
+		"turbo": "^2.3.3"
+	}
 }

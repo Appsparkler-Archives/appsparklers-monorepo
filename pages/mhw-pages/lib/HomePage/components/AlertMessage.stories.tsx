@@ -5,14 +5,14 @@ import { AlertMessage } from "./AlertMessage";
 import { fn } from "@storybook/test";
 
 const meta = {
-  title: "Pages/Home Page/Alert Message",
-  component: AlertMessage,
-  parameters: {
-    layout: "fullscreen",
-  },
-  args: {
-    onClose: fn(),
-  },
+	title: "Pages/Home Page/Alert Message",
+	component: AlertMessage,
+	parameters: {
+		layout: "fullscreen",
+	},
+	args: {
+		onClose: fn(),
+	},
 } satisfies Meta<typeof AlertMessage>;
 
 export default meta;

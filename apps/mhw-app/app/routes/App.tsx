@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { useBoolean } from "usehooks-ts";
 import {
   HomePage,
-  HomePageProps,
+  type HomePageProps,
 } from "@repo/pages-mhw/dist/HomePage/HomePage";
 import { AlertMessage } from "@repo/pages-mhw/dist/HomePage/components/AlertMessage";
 

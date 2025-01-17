@@ -1,56 +1,56 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
-  "tasks": {
-    "dev": {
-      "persistent": true,
-      "cache": false,
-      "dependsOn": ["^build"]
-    },
-    "css:watch": {
-      "persistent": true,
-      "cache": false
-    },
-    "build": {
-      "inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
-      "outputs": ["dist", "build"],
-      "dependsOn": ["^build"]
-    },
-    "lint": {
-      "inputs": [
-        "eslint.config.js",
-        ".storybook/**/*.{ts,tsx,js}",
-        "{lib,app}/**/*.{ts,tsx,js,jsx}",
-        "public/**/*.{ts,tsx,js,jsx,html}",
-        "package.json",
-        "tailwind.config.js",
-        "vite.config.ts"
-      ]
-    },
-    "start": {
-      "persistent": true,
-      "cache": false
-    },
-    "netlify:build": {
-      "cache": false,
-      "inputs": [
-        "**/*.{ts,tsx}",
-        "tsconfig*.json",
-        "vite.config.ts",
-        "netlify.toml"
-      ],
-      "outputs": ["build"],
-      "dependsOn": ["^build"]
-    },
-    "deploy": {
-      "cache": false,
-      "interactive": true,
-      "dependsOn": ["netlify:build"]
-    },
-    "deploy:prod": {
-      "cache": false,
-      "interactive": true,
-      "dependsOn": ["netlify:build"]
-    }
-  }
+	"$schema": "https://turbo.build/schema.json",
+	"ui": "tui",
+	"tasks": {
+		"dev": {
+			"persistent": true,
+			"cache": false,
+			"dependsOn": ["^build"]
+		},
+		"css:watch": {
+			"persistent": true,
+			"cache": false
+		},
+		"build": {
+			"inputs": ["**/*.{ts,tsx}", "tsconfig*.json", "vite.config.ts"],
+			"outputs": ["dist", "build"],
+			"dependsOn": ["^build"]
+		},
+		"lint": {
+			"inputs": [
+				"eslint.config.js",
+				".storybook/**/*.{ts,tsx,js}",
+				"{lib,app}/**/*.{ts,tsx,js,jsx}",
+				"public/**/*.{ts,tsx,js,jsx,html}",
+				"package.json",
+				"tailwind.config.js",
+				"vite.config.ts"
+			]
+		},
+		"start": {
+			"persistent": true,
+			"cache": false
+		},
+		"netlify:build": {
+			"cache": false,
+			"inputs": [
+				"**/*.{ts,tsx}",
+				"tsconfig*.json",
+				"vite.config.ts",
+				"netlify.toml"
+			],
+			"outputs": ["build"],
+			"dependsOn": ["^build"]
+		},
+		"deploy": {
+			"cache": false,
+			"interactive": true,
+			"dependsOn": ["netlify:build"]
+		},
+		"deploy:prod": {
+			"cache": false,
+			"interactive": true,
+			"dependsOn": ["netlify:build"]
+		}
+	}
 }

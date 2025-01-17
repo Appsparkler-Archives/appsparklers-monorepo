@@ -1,12 +1,12 @@
 [
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "app.netlify.my_hfn_world.twa",
-      "sha256_cert_fingerprints": [
-        "FB:A9:23:16:3B:9D:56:BD:59:5D:FF:48:AF:3A:37:1B:34:C0:79:9D:F8:49:29:00:5A:3B:3C:0E:6E:93:B1:5D"
-      ]
-    }
-  }
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "app.netlify.my_hfn_world.twa",
+			"sha256_cert_fingerprints": [
+				"FB:A9:23:16:3B:9D:56:BD:59:5D:FF:48:AF:3A:37:1B:34:C0:79:9D:F8:49:29:00:5A:3B:3C:0E:6E:93:B1:5D"
+			]
+		}
+	}
 ]

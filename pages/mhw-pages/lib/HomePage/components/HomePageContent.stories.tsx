@@ -3,15 +3,15 @@ import { HomePageContent } from "./HomePageContent";
 import { fn } from "@storybook/test";
 
 const meta = {
-  title: "Pages/Home Page/Home Page Content",
-  component: HomePageContent,
-  parameters: {
-    layout: "fullscreen",
-  },
-  args: {
-    onChangeBroadcastDate: fn(),
-    onFileDownloadError: fn(),
-  },
+	title: "Pages/Home Page/Home Page Content",
+	component: HomePageContent,
+	parameters: {
+		layout: "fullscreen",
+	},
+	args: {
+		onChangeBroadcastDate: fn(),
+		onFileDownloadError: fn(),
+	},
 } satisfies Meta<typeof HomePageContent>;
 
 export default meta;

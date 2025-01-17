@@ -1,47 +1,47 @@
 {
-  "name": "@repo/apps-mhw",
-  "version": "0.0.0",
-  "private": true,
-  "sideEffects": false,
-  "type": "module",
-  "scripts": {
-    "_dev": "remix vite:dev",
-    "dev": "rimraf build .netlify/edge-functions && netlify dev",
-    "build": "npm run css && remix vite:build",
-    "css": "tailwindcss -i ./app/input.css -o ./app/output.css",
-    "css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "netlify serve",
-    "typecheck": "tsc",
-    "netlify:build": "netlify build",
-    "deploy": "netlify deploy --open",
-    "deploy:prod": "netlify deploy --prod --open"
-  },
-  "dependencies": {
-    "@netlify/edge-functions": "^2.3.1",
-    "@netlify/remix-edge-adapter": "^3.2.1",
-    "@netlify/remix-runtime": "^2.2.0",
-    "@remix-run/node": "^2.15.2",
-    "@remix-run/react": "^2.15.2",
-    "@remix-run/serve": "^2.15.2",
-    "@repo/pages-mhw": "^0.0.0",
-    "isbot": "^4.1.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^2.15.2",
-    "@repo/configs-eslint-config": "^0.0.0",
-    "@tailwindcss/typography": "^0.5.15",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "daisyui": "^5.0.0-beta.1",
-    "eslint": "^9.18.0",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^4.0.0-beta.9",
-    "typescript": "^5.7.3",
-    "vite": "^5.4.11",
-    "vite-tsconfig-paths": "^4.2.1"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+	"name": "@repo/apps-mhw",
+	"version": "0.0.0",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"_dev": "remix vite:dev",
+		"dev": "rimraf build .netlify/edge-functions && netlify dev",
+		"build": "npm run css && remix vite:build",
+		"css": "tailwindcss -i ./app/input.css -o ./app/output.css",
+		"css:watch": "tailwindcss -i ./app/input.css -o ./app/output.css --watch",
+		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+		"start": "netlify serve",
+		"typecheck": "tsc",
+		"netlify:build": "netlify build",
+		"deploy": "netlify deploy --open",
+		"deploy:prod": "netlify deploy --prod --open"
+	},
+	"dependencies": {
+		"@netlify/edge-functions": "^2.3.1",
+		"@netlify/remix-edge-adapter": "^3.2.1",
+		"@netlify/remix-runtime": "^2.2.0",
+		"@remix-run/node": "^2.15.2",
+		"@remix-run/react": "^2.15.2",
+		"@remix-run/serve": "^2.15.2",
+		"@repo/pages-mhw": "^0.0.0",
+		"isbot": "^4.1.0"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "^2.15.2",
+		"@repo/configs-eslint-config": "^0.0.0",
+		"@tailwindcss/typography": "^0.5.15",
+		"@types/react": "^18.3.18",
+		"@types/react-dom": "^18.3.5",
+		"daisyui": "^5.0.0-beta.1",
+		"eslint": "^9.18.0",
+		"rimraf": "^6.0.1",
+		"tailwindcss": "^4.0.0-beta.9",
+		"typescript": "^5.7.3",
+		"vite": "^5.4.11",
+		"vite-tsconfig-paths": "^4.2.1"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
 }

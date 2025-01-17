@@ -2,13 +2,13 @@ import { PrivacyPolicyPage } from "@repo/pages-mhw";
 import type { MetaFunction } from "@netlify/remix-runtime";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Privacy Policy - My HFN World" },
-    {
-      name: "description",
-      content: "An app to support us in our daily HFN abhyaas.",
-    },
-  ];
+	return [
+		{ title: "Privacy Policy - My HFN World" },
+		{
+			name: "description",
+			content: "An app to support us in our daily HFN abhyaas.",
+		},
+	];
 };
 
 /*************  ✨ Codeium Command ⭐  *************/
@@ -20,5 +20,5 @@ export const meta: MetaFunction = () => {
 
 /******  efdd3824-ed5e-4cdc-beac-a9d1c47b1785  *******/
 export default function PrivacyPage() {
-  return <PrivacyPolicyPage />;
+	return <PrivacyPolicyPage />;
 }
