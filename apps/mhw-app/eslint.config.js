@@ -1,3 +1,3 @@
-import remixAppConfig from "@repo/eslint-config/remix-app";
+import remixAppConfig from "@repo/configs-eslint-config/remix-app";
 
 export default remixAppConfig;
