@@ -1,6 +1,6 @@
-import prosePlugin from "@tailwindcss/typography";
 // eslint-disable-next-line import/no-nodejs-modules
 import { resolve } from "path";
+import prosePlugin from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {

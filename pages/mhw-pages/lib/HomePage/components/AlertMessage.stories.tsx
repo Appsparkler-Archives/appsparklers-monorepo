@@ -1,8 +1,8 @@
 // story
 
 import type { Meta, StoryObj } from "@storybook/react";
-import { AlertMessage } from "./AlertMessage";
 import { fn } from "@storybook/test";
+import { AlertMessage } from "./AlertMessage";
 
 const meta = {
 	title: "Pages/Home Page/Alert Message",

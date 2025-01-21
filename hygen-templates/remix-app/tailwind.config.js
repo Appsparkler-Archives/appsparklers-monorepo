@@ -1,6 +1,6 @@
-import daisyuiPlugin from "daisyui";
-import prosePlugin from "@tailwindcss/typography";
 import { resolve } from "path";
+import prosePlugin from "@tailwindcss/typography";
+import daisyuiPlugin from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AsyncFileDownloadButton } from "./AsyncFileDownloadButton";
 import { fn } from "@storybook/test";
+import { AsyncFileDownloadButton } from "./AsyncFileDownloadButton";
 
 const meta = {
 	title: "Pages/Home Page/Async File Download Button",

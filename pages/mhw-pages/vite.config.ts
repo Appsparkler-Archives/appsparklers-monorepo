@@ -1,9 +1,9 @@
-import { defineConfig, type PluginOption } from "vite";
-import react from "@vitejs/plugin-react";
 import { extname, relative, resolve } from "path";
-import dts from "vite-plugin-dts";
-import * as glob from "glob";
 import { fileURLToPath } from "url";
+import react from "@vitejs/plugin-react";
+import * as glob from "glob";
+import { type PluginOption, defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({

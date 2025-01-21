@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { DateField } from "./DateField";
 import { fn } from "@storybook/test";
+import { DateField } from "./DateField";
 
 const meta = {
 	title: "Pages/Home Page/Date Field",

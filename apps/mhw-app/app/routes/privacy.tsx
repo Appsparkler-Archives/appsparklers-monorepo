@@ -1,5 +1,5 @@
-import { PrivacyPolicyPage } from "@repo/pages-mhw";
 import type { MetaFunction } from "@netlify/remix-runtime";
+import { PrivacyPolicyPage } from "@repo/pages-mhw";
 
 export const meta: MetaFunction = () => {
 	return [

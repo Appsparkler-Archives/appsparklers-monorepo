@@ -1,4 +1,3 @@
-
 (self.webpackChunkhc_app = self.webpackChunkhc_app || []).push([
 	[787],
 	{
@@ -16,14 +15,14 @@
 				a,
 				o,
 				u = (e, t) => ({
-						name: e,
-						value: void 0 === t ? -1 : t,
-						delta: 0,
-						entries: [],
-						id: "v2-"
-							.concat(Date.now(), "-")
-							.concat(Math.floor(8999999999999 * Math.random()) + 1e12),
-					}),
+					name: e,
+					value: void 0 === t ? -1 : t,
+					delta: 0,
+					entries: [],
+					id: "v2-"
+						.concat(Date.now(), "-")
+						.concat(Math.floor(8999999999999 * Math.random()) + 1e12),
+				}),
 				c = (e, t) => {
 					try {
 						if (PerformanceObserver.supportedEntryTypes.includes(e)) {
@@ -64,7 +63,7 @@
 					};
 				},
 				v = -1,
-				p = () => "hidden" === document.visibilityState ? 0 : 1 / 0,
+				p = () => ("hidden" === document.visibilityState ? 0 : 1 / 0),
 				d = () => {
 					f((e) => {
 						var t = e.timeStamp;
@@ -72,20 +71,20 @@
 					}, !0);
 				},
 				l = () => (
-						v < 0 &&
-							((v = p()),
-							d(),
-							s(() => {
-								setTimeout(() => {
-									(v = p()), d();
-								}, 0);
-							})),
-						{
-							get firstHiddenTime() {
-								return v;
-							},
-						}
-					),
+					v < 0 &&
+						((v = p()),
+						d(),
+						s(() => {
+							setTimeout(() => {
+								(v = p()), d();
+							}, 0);
+						})),
+					{
+						get firstHiddenTime() {
+							return v;
+						},
+					}
+				),
 				h = (e, t) => {
 					var n,
 						i = l(),
@@ -197,8 +196,8 @@
 					}
 				},
 				F = (e) => {
-					["mousedown", "keydown", "touchstart", "pointerdown"].forEach(
-						(t) => e(t, b, E),
+					["mousedown", "keydown", "touchstart", "pointerdown"].forEach((t) =>
+						e(t, b, E),
 					);
 				},
 				C = (e, t) => {

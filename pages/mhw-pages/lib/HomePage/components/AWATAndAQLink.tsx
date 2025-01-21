@@ -42,7 +42,8 @@ export const AWATAndAQLink = () => {
 		<a
 			href={`https://heartfulness.org/magazine/a-word-a-thought-a-question/${latestThursday}`}
 			target="_blank"
-			className="btn btn-primary w-full rounded-none h-auto p-2" rel="noreferrer"
+			className="btn btn-primary w-full rounded-none h-auto p-2"
+			rel="noreferrer"
 		>
 			Read A Word, A Thought And A Question
 		</a>
