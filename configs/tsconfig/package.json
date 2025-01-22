@@ -4,11 +4,7 @@
 	"description": "TS configs for various kinds of repos",
 	"license": "ISC",
 	"author": "appsparklers",
-	"type": "module",
-	"main": "index.js",
-	"scripts": {},
-	"devDependencies": {},
-	"exports": {
-		"./remix-app": "./remix-app/tsconfig.json"
+	"publishConfig": {
+		"access": "public"
 	}
 }
