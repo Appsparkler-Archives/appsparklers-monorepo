@@ -1,5 +1,5 @@
-import { extname, relative, resolve } from "path";
-import { fileURLToPath } from "url";
+import { extname, relative, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react";
 import * as glob from "glob";
 import { type PluginOption, defineConfig } from "vite";
