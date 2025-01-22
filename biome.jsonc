@@ -7,7 +7,14 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["dist", "build", "hc-app", "output.css"]
+		"ignore": [
+			"dist",
+			"build",
+			"hc-app",// src code for hc-app isn't available as of now.
+			"output.css",
+			"node_modules",
+			"packge-lock.json"
+		]
 	},
 	"formatter": {
 		"enabled": true,
