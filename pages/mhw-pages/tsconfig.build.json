@@ -1,4 +1,4 @@
 {
-	"extends": "./tsconfig.app.json",
+	"extends": "@repo/configs-tsconfigs/react-library/tsconfig.app.json",
 	"include": ["lib"]
 }
