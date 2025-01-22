@@ -51,7 +51,7 @@ export const PrivacyPolicyPage = () => {
 						Heartfulness. Your privacy and trust are of utmost importance to us.
 					</p>
 				</div>
-				<div className="h-3 w-full bg-primary"></div>
+				<div className="h-3 w-full bg-primary" />
 			</div>
 		</div>
 	);

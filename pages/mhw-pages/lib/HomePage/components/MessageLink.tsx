@@ -15,9 +15,8 @@ export const MessageLink = ({
 	const className = useMemo(() => {
 		if (disabled) {
 			return "btn btn-disabled w-full rounded-none h-auto";
-		} else {
-			return "btn w-full rounded-none h-auto";
 		}
+		return "btn w-full rounded-none h-auto";
 	}, [disabled]);
 
 	return (

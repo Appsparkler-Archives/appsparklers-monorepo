@@ -1,4 +1,4 @@
-import { resolve } from "path";
+import { resolve } from "node:path";
 import prosePlugin from "@tailwindcss/typography";
 import daisyuiPlugin from "daisyui";
 
