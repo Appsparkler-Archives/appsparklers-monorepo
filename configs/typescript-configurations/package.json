@@ -1,5 +1,5 @@
 {
-	"name": "@repo/configs-tsconfigs",
+	"name": "@repo/typescript-configurations",
 	"version": "1.0.0",
 	"description": "TS configs for various kinds of repos",
 	"license": "ISC",
