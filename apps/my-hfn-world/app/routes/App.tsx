@@ -1,8 +1,8 @@
 import {
 	HomePage,
 	type HomePageProps,
-} from "@repo/pages-mhw/dist/HomePage/HomePage";
-import { AlertMessage } from "@repo/pages-mhw/dist/HomePage/components/AlertMessage";
+} from "@repo/my-hfn-world-pages/dist/HomePage/HomePage";
+import { AlertMessage } from "@repo/my-hfn-world-pages/dist/HomePage/components/AlertMessage";
 import { useCallback, useState } from "react";
 import { useBoolean } from "usehooks-ts";
 
