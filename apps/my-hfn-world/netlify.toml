@@ -1,11 +1,11 @@
 [build]
-base = "apps/mhw-app"
+base = "apps/my-hfn-world"
 command = "npm run build"
-publish = "apps/mhw-app/build/client"
+publish = "apps/my-hfn-world/build/client"
 edge_functions = ".netlify/edge-functions"
 
 [dev]
-base = "./apps/mhw-app"
+base = "./apps/my-hfn-world"
 command = "npm run _dev"
 framework = "vite"
 

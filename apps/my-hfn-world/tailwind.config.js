@@ -4,7 +4,7 @@ import prosePlugin from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: [resolve("../../pages/mhw-pages/lib/**/*.{js,jsx,ts,tsx}")],
+	content: [resolve("../../pages/my-hfn-world/lib/**/*.{js,jsx,ts,tsx}")],
 	// daisyui: {
 	//   darkTheme: true,
 	//   themes: [
