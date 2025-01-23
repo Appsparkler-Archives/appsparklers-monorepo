@@ -1,4 +1,4 @@
 {
-	"extends": "@repo/typescript-configurations/remix-app",
+	"extends": "@repo/typescript-configurations/remix-app/tsconfig.json",
 	"include": ["env.d.ts", "**/*.ts", "**/*.tsx", "netlify-edge-plugin.ts"]
 }
